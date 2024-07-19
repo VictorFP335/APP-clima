@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplicativo de Clima</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center">Aplicativo de Clima</h1>
+        <div class="my-4">
+            <label for="city" class="form-label">Selecione a cidade:</label>
+            <input type="text" id="city" class="form-control" placeholder="Digite a cidade">
+            <button class="btn" onclick="getWeather()">Buscar</button>
+        </div>
+        <div id="weatherResult" class="text-center"></div>
+    </div>
+
+    <div class="right-section">
+        <div class="weather-table">
+            <div class="weather-row">
+                <div class="weather-cell">São Paulo</div>
+                <div class="weather-cell">20°C</div>
+            </div>
+            <div class="weather-row">
+                <div class="weather-cell">Rio de Janeiro</div>
+                <div class="weather-cell">25°C</div>
+            </div>
+            <div class="weather-row">
+                <div class="weather-cell">Belo Horizonte</div>
+                <div class="weather-cell">22°C</div>
+            </div>
+        </div>
+        <div class="image-container">
+            <img src="fundo.jpg" alt="Imagem de fundo">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
